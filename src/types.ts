@@ -14,10 +14,16 @@ export interface CardButtonProps extends ButtonProps {
 	arrowType: "long" | "short";
 	link: string;
 }
-export interface ServiceCardProps {
+
+export interface CardProps {
 	id: number;
-	Icon: IconType;
 	title: string;
 	description: string;
 	link: string;
+}
+export interface ServiceCardProps extends CardProps {
+	Icon: IconType;
+}
+export interface ProjectCardProps extends CardProps {
+	image: string;
 }

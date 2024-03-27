@@ -4,7 +4,7 @@ import data from "../data";
 const Services = () => {
 	const { services } = data;
 	return (
-		<section className="mt-[30px] bg-light-green">
+		<section className="bg-light-green pt-[30px]">
 			<div className="c-container py-8 px-5 flex flex-col items-center gap-12">
 				<div className="text-brand-green space-y-6">
 					<h2>Diverse services to help your business</h2>
@@ -16,7 +16,7 @@ const Services = () => {
 				</div>
 				<div className="grid gap-4">
 					{services.map((service) => (
-                        <Card {...service} key={service.id} />
+						<Card {...service} key={service.id} />
 					))}
 				</div>
 			</div>

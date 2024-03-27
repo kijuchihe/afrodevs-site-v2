@@ -1,6 +1,6 @@
 import Button from "../UI/Button";
 import CTAButton from "../UI/CTAButton";
-import HeroImg from "../assets/images/hero-img.png";
+import heroImg from "../assets/images/hero-img.png";
 
 const Hero = () => {
 	return (
@@ -28,7 +28,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className="flex justify-center">
-					<img src={HeroImg} alt="hero image" />
+					<img src={heroImg} alt="hero image" />
 				</div>
 			</div>
 		</section>

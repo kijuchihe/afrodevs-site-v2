@@ -14,8 +14,8 @@ export default {
 				"darkened-green": "#05867D",
 				"brand-green": "#05574D",
 				"light-green": "#DDEEEC",
-				text: "#4A5452",
-				"light-text": "#96A2A0",
+				grey: "#4A5452",
+				"light-grey": "#96A2A0",
 			},
 			fontFamily: {
 				inter: ["Inter", "sans-serif"],

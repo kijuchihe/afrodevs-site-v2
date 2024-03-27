@@ -12,7 +12,7 @@ const Navbar = () => {
 
 	return (
 		<header className="shadow-[0_10px_30px_-10px] shadow-black/5 md:shadow-none">
-			<div className="px-4 py-5 min-[768px]:px-[50px] c-container">
+			<div className="px-4 py-5 c-container">
 				<nav className="flex items-center justify-between w-full">
 					{/* logo and hamburger */}
 					<a href="/" className="block w-36">

@@ -23,7 +23,7 @@ const MobileNav = ({ showMenu }: { showMenu: boolean }) => {
 				</a>
 			</li>
 			<li className="cta">
-				<CTAButton className="max-sm:justify-center bg-green hover:bg-darkened-green sm:w-fit">
+				<CTAButton className="max-sm:justify-center bg-green hover:bg-darkened-green sm:w-fit text-white">
 					Hire Us
 				</CTAButton>
 			</li>

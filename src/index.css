@@ -8,11 +8,28 @@
 	body {
 		@apply font-inter;
 	}
+
+	h1,
+	h2 {
+		@apply font-bold;
+	}
+
+	h1 {
+		@apply text-4xl;
+	}
+
+	h2 {
+		@apply text-3xl;
+	}
+
+	h4 {
+		@apply font-semibold text-2xl;
+	}
 }
 
 @layer components {
 	.c-container {
-		@apply max-w-7xl mx-auto;
+		@apply max-w-7xl mx-auto min-[768px]:px-[50px];
 	}
 
 	.btn {
@@ -20,11 +37,11 @@
 	}
 
 	.mobile-nav .nav-link {
-		@apply block px-4 py-3 transition-all duration-150 ease-in-out text-light-text hover:text-green hover:font-medium;
+		@apply block px-4 py-3 transition-all duration-150 ease-in-out text-light-grey hover:text-green hover:font-medium;
 	}
 
 	.desktop-nav .nav-link {
-		@apply p-2 transition-all duration-200 ease-in-out text-light-text hover:text-green hover:font-medium;
+		@apply p-2 transition-all duration-200 ease-in-out text-light-grey hover:text-green hover:font-medium;
 	}
 
 	.mobile-nav .cta {

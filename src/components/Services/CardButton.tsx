@@ -1,18 +1,25 @@
+import { HiArrowRight } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
-import { ButtonProps } from "../types";
+import { CardButtonProps } from "../../types";
 
-const CTAButton = ({ children, className }: ButtonProps) => {
+const CardButton = ({
+	children,
+	className,
+	arrowType,
+	link,
+}: CardButtonProps) => {
 	return (
 		<a
-			href="#"
+			href={link}
 			className={`flex items-center gap-2 btn rounded-[4px] group transition-all duration-300 ease-in-out ${className}`}
 		>
 			<span>{children}</span>
 			<span className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-1">
-				<HiArrowLongRight size={20} />
+				{arrowType === "long" && <HiArrowLongRight size={20} />}
+				{arrowType === "short" && <HiArrowRight size={20} />}
 			</span>
 		</a>
 	);
 };
 
-export default CTAButton;
+export default CardButton;

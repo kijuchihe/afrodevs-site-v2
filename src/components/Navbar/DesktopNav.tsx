@@ -21,7 +21,7 @@ const DesktopNav = () => {
 				</li>
 			</li>
 			<li className="cta">
-				<CTAButton className="justify-center bg-green hover:bg-darkened-green">
+				<CTAButton className="justify-center bg-green hover:bg-darkened-green text-white">
 					Hire Us
 				</CTAButton>
 			</li>

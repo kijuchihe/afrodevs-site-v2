@@ -4,13 +4,14 @@ export default {
 	theme: {
 		screens: {
 			sm: "480px",
-			md: "768px",
+			md: "967px",
 			lg: "1080px",
-			xl: "1200px",
+			xl: "14400px",
 		},
 		extend: {
 			colors: {
 				green: "#06A290",
+				"darkened-green": "#05867D",
 				"brand-green": "#05574D",
 				"light-green": "#DDEEEC",
 				text: "#4A5452",

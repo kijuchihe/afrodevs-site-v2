@@ -8,6 +8,7 @@ import { LuDatabase } from "react-icons/lu";
 import project1 from "./assets/images/project-1.png";
 import project2 from "./assets/images/project-2.png";
 import project3 from "./assets/images/project-3.png";
+import avatar from "./assets/images/avatar.png";
 
 const data = {
 	services: [
@@ -68,6 +69,44 @@ const data = {
 			description:
 				"Pizza ipsum dolor amet thin crust large black olives large olives large black olives.",
 			link: "#",
+		},
+	],
+	reviews: [
+		{
+			id: 1,
+			image: avatar,
+			name: "Arlene McCoy",
+			status: "Uber",
+			comment:
+				"Pizza ipsum dolor amet thin crust large black olives & tomato fresh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large blackh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large black.",
+			rating: 4,
+		},
+		{
+			id: 2,
+			image: avatar,
+			name: "Arlene McCoy",
+			status: "Uber",
+			comment:
+				"Pizza ipsum dolor amet thin crust large black olives & tomato fresh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large blackh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large black.",
+			rating: 5,
+		},
+		{
+			id: 3,
+			image: avatar,
+			name: "Arlene McCoy",
+			status: "Uber",
+			comment:
+				"Pizza ipsum dolor amet thin crust large black olives & tomato fresh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large blackh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large black.",
+			rating: 4,
+		},
+		{
+			id: 4,
+			image: avatar,
+			name: "Arlene McCoy",
+			status: "Uber",
+			comment:
+				"Pizza ipsum dolor amet thin crust large black olives & tomato fresh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large blackh tomatoes Pizza ipsum dolor amet thin crust large black fresh tomatoes Pizza ipsum dolor amet thin crust large black.",
+			rating: 5,
 		},
 	],
 };

@@ -1,5 +1,5 @@
 import { ProjectCardProps } from "../../types";
-import CardButton from "../Services/CardButton";
+import CardButton from "../../UI/CardButton";
 
 const Card = ({ image, title, description, link }: ProjectCardProps) => {
 	return (

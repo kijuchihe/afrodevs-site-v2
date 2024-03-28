@@ -27,3 +27,18 @@ export interface ServiceCardProps extends CardProps {
 export interface ProjectCardProps extends CardProps {
 	image: string;
 }
+export interface ReviewCardProps {
+	rating: number;
+	image: string;
+	name: string;
+	status: string;
+	comment: string;
+}
+export interface CarouselProps {
+	autoSlide: boolean;
+	autoSlideInterval: number;
+}
+export interface CarouselButtonsProps {
+	onPrevious: () => void;
+	onNext: () => void;
+}

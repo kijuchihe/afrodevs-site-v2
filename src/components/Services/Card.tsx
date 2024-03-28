@@ -1,4 +1,4 @@
-import CardButton from "./CardButton";
+import CardButton from "../../UI/CardButton";
 import { ServiceCardProps } from "../../types";
 
 const Card = ({ Icon, title, description, link }: ServiceCardProps) => {

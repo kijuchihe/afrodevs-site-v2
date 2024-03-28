@@ -47,4 +47,8 @@
 	.mobile-nav .cta {
 		@apply px-4 py-3;
 	}
+
+	.carousel-buttons button {
+		@apply text-green bg-light-green p-3 rounded-lg flex items-center justify-center;
+	}
 }

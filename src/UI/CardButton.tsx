@@ -1,6 +1,6 @@
 import { HiArrowRight } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
-import { CardButtonProps } from "../../types";
+import { CardButtonProps } from "../types";
 
 const CardButton = ({
 	children,

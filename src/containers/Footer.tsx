@@ -20,8 +20,8 @@ const Footer = () => {
 				</div>
 				<FooterLinks />
 			</div>
-			<div className="px-5 c-container">
-				<div className="flex flex-col gap-10 pt-6 border-t border-light-grey">
+			<div className="px-5 py-8 c-container">
+				<div className="flex flex-col gap-3 pt-6 border-t border-light-grey">
 					<Logo width="w-36" />
 					<div className="text-sm text-grey">
 						©{year} Afrodevs. All rights reserved

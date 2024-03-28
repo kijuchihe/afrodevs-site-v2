@@ -4,6 +4,7 @@ import Projects from "./containers/Projects";
 import Services from "./containers/Services";
 import Testimonials from "./containers/Reviews";
 import WorkTogetherSection from "./containers/WorkTogetherSection";
+import Footer from "./containers/Footer";
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 			<Projects />
 			<Testimonials />
 			<WorkTogetherSection />
+			<Footer />
 		</>
 	);
 };

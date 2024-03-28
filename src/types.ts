@@ -46,3 +46,8 @@ export interface StatusCardProps {
 	bgColor: string;
 	textColor: string;
 }
+
+export interface FooterLinkBlockProps {
+	title: string;
+	children: ReactNode;
+}

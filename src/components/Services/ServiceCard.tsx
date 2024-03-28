@@ -1,9 +1,9 @@
 import CardButton from "../../UI/CardButton";
 import { ServiceCardProps } from "../../types";
 
-const Card = ({ Icon, title, description, link }: ServiceCardProps) => {
+const ServiceCard = ({ Icon, title, description, link }: ServiceCardProps) => {
 	return (
-		<div className="flex flex-col bg-white rounded-[20px] p-6 gap-8">
+		<div className="flex flex-col bg-white rounded-[20px] p-6 gap-8 border-[#E6E8EC]/50 border ">
 			<div>
 				<div className="text-brand-green bg-light-green rounded-[10px] w-fit p-4">
 					<Icon size={30} />
@@ -24,4 +24,4 @@ const Card = ({ Icon, title, description, link }: ServiceCardProps) => {
 	);
 };
 
-export default Card;
+export default ServiceCard;

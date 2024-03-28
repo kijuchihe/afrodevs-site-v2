@@ -34,11 +34,15 @@ export interface ReviewCardProps {
 	status: string;
 	comment: string;
 }
-export interface CarouselProps {
-	autoSlide: boolean;
-	autoSlideInterval: number;
-}
+
 export interface CarouselButtonsProps {
 	onPrevious: () => void;
 	onNext: () => void;
+}
+export interface StatusCardProps {
+	icon: string;
+	amount: number;
+	title: string;
+	bgColor: string;
+	textColor: string;
 }

@@ -1,7 +1,7 @@
 import { ProjectCardProps } from "../../types";
 import CardButton from "../../UI/CardButton";
 
-const Card = ({ image, title, description, link }: ProjectCardProps) => {
+const ProjectCard = ({ image, title, description, link }: ProjectCardProps) => {
 	return (
 		<figure className="border border-light-grey rounded-lg">
 			<div>
@@ -22,4 +22,4 @@ const Card = ({ image, title, description, link }: ProjectCardProps) => {
 	);
 };
 
-export default Card;
+export default ProjectCard;

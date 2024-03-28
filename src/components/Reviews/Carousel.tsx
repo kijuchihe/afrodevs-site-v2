@@ -23,6 +23,7 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
 		if (!autoSlide) return;
 		const slideInterval = setInterval(next, autoSlideInterval);
 		return () => clearInterval(slideInterval);
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

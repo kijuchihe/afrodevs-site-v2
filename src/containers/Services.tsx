@@ -5,8 +5,8 @@ const Services = () => {
 	const { services } = data;
 	return (
 		<section className="bg-light-green pt-[30px]">
-			<div className="c-container py-8 px-5 flex flex-col items-center gap-12">
-				<div className="text-brand-green space-y-6">
+			<div className="flex flex-col items-center gap-12 px-5 py-8 c-container">
+				<div className="space-y-6 text-brand-green">
 					<h2>Diverse services to help your business</h2>
 					<p>
 						Pizza ipsum dolor amet thin crust large black olives &

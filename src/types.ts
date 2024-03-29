@@ -51,3 +51,11 @@ export interface FooterLinkBlockProps {
 	title: string;
 	children: ReactNode;
 }
+export interface MobileNavProps {
+	showMenu: boolean;
+	onToggleMenu: () => void;
+}
+export interface NavLinkProps {
+	name: string;
+	onClick?: () => void;
+}

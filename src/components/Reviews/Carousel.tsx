@@ -1,33 +1,10 @@
-import { useEffect, useState } from "react";
-import data from "../../data";
 import ReviewCard from "./ReviewCard";
 import CarouselBUttons from "./CarouselBUttons";
+import { CarouselProps } from "../../types";
 
-const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
-	const [current, setCurrent] = useState(0);
-	const { reviews } = data;
-
-	const prev = () => {
-		setCurrent((current) =>
-			current === 0 ? reviews.length - 1 : current - 1
-		);
-	};
-
-	const next = () => {
-		setCurrent((current) =>
-			current === reviews.length - 1 ? 0 : current + 1
-		);
-	};
-
-	useEffect(() => {
-		if (!autoSlide) return;
-		const slideInterval = setInterval(next, autoSlideInterval);
-		return () => clearInterval(slideInterval);
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
-
+const Carousel = ({ reviews, current, prev, next }: CarouselProps) => {
 	return (
-		<div className="max-w-xs  max-[340px]:max-w-[270px]">
+		<div className="max-w-xs  max-[340px]:max-w-[270px] sm:max-w-md min-[768px]:max-w-lg md:max-w-md min-[1080px]:max-w-[515px]">
 			<div className="overflow-hidden">
 				<div
 					className="flex transition-transform ease-out duration-500"
@@ -41,8 +18,8 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
 				</div>
 			</div>
 			{/* Pagination */}
-			<div className="mt-5 mb-10">
-				<div className="flex items-center justify-center gap-2">
+			<div className="mt-5 mb-10 md:mt-12 md:mb-0">
+				<div className="flex items-center justify-center gap-2 md:justify-start">
 					{reviews.map((_, index) => (
 						<div
 							key={index}
@@ -56,7 +33,9 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
 				</div>
 			</div>
 
-			<CarouselBUttons onPrevious={prev} onNext={next} />
+			<div className="md:hidden">
+				<CarouselBUttons onPrevious={prev} onNext={next} />
+			</div>
 		</div>
 	);
 };

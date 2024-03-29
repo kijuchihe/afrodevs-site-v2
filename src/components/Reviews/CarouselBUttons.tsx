@@ -3,12 +3,12 @@ import { CarouselButtonsProps } from "../../types";
 
 const CarouselBUttons = ({ onPrevious, onNext }: CarouselButtonsProps) => {
 	return (
-		<div className="carousel-buttons flex gap-4">
+		<div className="carousel-buttons flex gap-4 text-[20px] lg:text-[32px]">
 			<button onClick={onPrevious}>
-				<HiArrowLeft size={20} />
+				<HiArrowLeft />
 			</button>
 			<button onClick={onNext}>
-				<HiArrowRight size={20} />
+				<HiArrowRight />
 			</button>
 		</div>
 	);

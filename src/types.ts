@@ -1,6 +1,14 @@
 import { ReactNode } from "react";
 import { IconType } from "react-icons";
 
+type Review = {
+	id: number;
+	image: string;
+	name: string;
+	status: string;
+	comment: string;
+	rating: number;
+};
 export interface HamburgerMenuProps {
 	showMenu: boolean;
 	onToggleMenu: () => void;
@@ -58,4 +66,16 @@ export interface MobileNavProps {
 export interface NavLinkProps {
 	name: string;
 	onClick?: () => void;
+}
+
+export interface ReviewSliderHookProps {
+	reviews: Review[];
+	autoSlide: boolean;
+	autoSlideInterval: number;
+}
+export interface CarouselProps {
+	reviews: Review[];
+	current: number;
+	prev: () => void;
+	next: () => void;
 }

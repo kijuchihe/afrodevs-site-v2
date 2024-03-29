@@ -32,7 +32,7 @@
 	}
 
 	h2 {
-		@apply text-3xl;
+		@apply text-3xl min-[768px]:text-4xl lg:text-[2.5rem];
 	}
 
 	h4 {
@@ -43,6 +43,10 @@
 @layer components {
 	.c-container {
 		@apply mx-auto max-w-7xl;
+	}
+
+	.section {
+		@apply gap-12 px-5 py-8 c-container md:py-16 lg:py-20;
 	}
 
 	.btn {

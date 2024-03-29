@@ -26,7 +26,7 @@ const data = {
 			Icon: LuCode2,
 			title: "Mobile App Development",
 			description:
-				"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam nec tortor massa.	Praesent cursus porttitor egestas.",
+				"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam nec tortor massa.	Praesent cursus porttitor egestas. ",
 			link: "#",
 		},
 		{

@@ -4,7 +4,7 @@ import StatusCards from "../components/WorkTogetherSection/StatusCards";
 const WorkTogetherSection = () => {
 	return (
 		<section className="bg-white pt-[30px]">
-			<div className="c-container py-8 px-5 flex flex-col gap-12">
+			<div className="flex flex-col section">
 				<div className="space-y-6">
 					<h2 className="text-brand-green">Let’s work together!</h2>
 					<p className="text-grey">

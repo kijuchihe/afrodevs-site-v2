@@ -1,14 +1,14 @@
-import Card from "../components/Projects/ProjectCard";
+import ProjectCard from "../components/Projects/ProjectCard";
 import data from "../data";
 
 const Projects = () => {
 	const { projects } = data;
 	return (
 		<section className="bg-white pt-[30px]">
-			<div className="flex flex-col items-center gap-12 px-5 py-8 c-container">
-				<div className="space-y-6">
+			<div className="flex flex-col items-center section">
+				<div className="space-y-6 sm:text-center">
 					<h2 className="text-brand-green">Our featured projects</h2>
-					<p className="text-grey">
+					<p className="text-grey sm:max-w-[500px]">
 						Pizza ipsum dolor amet thin crust large black olives &
 						tomato fresh tomatoes Pizza ipsum dolor amet thin crust
 						large black.
@@ -16,7 +16,7 @@ const Projects = () => {
 				</div>
 				<div className="grid gap-6">
 					{projects.map((project) => (
-						<Card {...project} key={project.id} />
+						<ProjectCard {...project} key={project.id} />
 					))}
 				</div>
 			</div>

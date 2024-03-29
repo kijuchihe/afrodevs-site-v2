@@ -1,4 +1,4 @@
-import Hero from "./components/Hero";
+import Hero from "./containers/Hero";
 import Navbar from "./containers/Navbar";
 import Projects from "./containers/Projects";
 import Services from "./containers/Services";

@@ -5,15 +5,17 @@ export default {
 		screens: {
 			sm: "480px",
 			md: "967px",
-			lg: "1080px",
+			lg: "1200px",
 			xl: "14400px",
 		},
 		extend: {
 			colors: {
 				green: "#06A290",
-				"darkened-green": "#05867D",
 				"brand-green": "#05574D",
 				"light-green": "#DDEEEC",
+				"darkened-green": "#05867D",
+				"darkened-light-green": "#D2E2E0",
+				"darkened-brand-green": "#053F49",
 				grey: "#4A5452",
 				"light-grey": "#96A2A0",
 				brown: "#BC7F10",

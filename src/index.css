@@ -28,7 +28,7 @@
 	}
 
 	h1 {
-		@apply text-4xl;
+		@apply text-4xl sm:text-[2.5rem] sm:leading-tight min-[768px]:text-5xl min-[768px]:leading-snug md:text-[2.5rem] tracking-wide lg:text-[3.25rem] lg:leading-tight;
 	}
 
 	h2 {
@@ -42,7 +42,7 @@
 
 @layer components {
 	.c-container {
-		@apply max-w-7xl mx-auto min-[768px]:px-[50px];
+		@apply mx-auto max-w-7xl;
 	}
 
 	.btn {
@@ -63,5 +63,11 @@
 
 	.carousel-buttons button {
 		@apply flex items-center justify-center p-3 rounded-lg text-green bg-light-green;
+	}
+
+	@media screen and (min-width: 768px) {
+		.c-container {
+			@apply !px-[50px];
+		}
 	}
 }

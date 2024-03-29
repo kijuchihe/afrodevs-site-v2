@@ -46,7 +46,7 @@
 	}
 
 	.section {
-		@apply gap-12 px-5 py-8 c-container md:py-16 lg:py-20;
+		@apply gap-12 px-5 py-8 c-container min-[768px]:py-16 lg:py-20;
 	}
 
 	.btn {

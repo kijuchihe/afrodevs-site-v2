@@ -14,7 +14,7 @@ const Projects = () => {
 						large black.
 					</p>
 				</div>
-				<div className="grid gap-6">
+				<div className="grid justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
 					{projects.map((project) => (
 						<ProjectCard {...project} key={project.id} />
 					))}

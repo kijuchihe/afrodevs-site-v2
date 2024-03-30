@@ -7,8 +7,8 @@ import icon4 from "../../assets/svgs/package.svg";
 
 const StatusCards = () => {
 	return (
-		<div className="flex flex-col gap-4">
-			<div className="flex flex-col gap-4">
+		<div className="status-cards-wrapper">
+			<div className="status-cards-container">
 				<StatusCard
 					icon={icon1}
 					amount={200}
@@ -24,7 +24,7 @@ const StatusCards = () => {
 					textColor="text-lime"
 				/>
 			</div>
-			<div className="flex flex-col gap-4">
+			<div className="status-cards-container">
 				<StatusCard
 					icon={icon3}
 					amount={17}

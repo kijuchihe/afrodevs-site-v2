@@ -6,7 +6,7 @@ const Reviews = () => {
 	const { reviews } = data;
 	const { current, prev, next } = useReviewSlider({
 		reviews,
-		autoSlide: false,
+		autoSlide: true,
 		autoSlideInterval: 3000,
 	});
 

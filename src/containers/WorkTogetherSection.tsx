@@ -4,20 +4,20 @@ import StatusCards from "../components/WorkTogetherSection/StatusCards";
 const WorkTogetherSection = () => {
 	return (
 		<section className="bg-white pt-[30px]">
-			<div className="flex flex-col section">
-				<div className="space-y-6">
+			<div className="flex flex-col gap-24 section lg:flex-row lg:gap-10 lg:justify-between">
+				<div className="space-y-6 sm:text-center lg:text-left">
 					<h2 className="text-brand-green">Let’s work together!</h2>
-					<p className="text-grey">
+					<p className="text-grey sm:max-w-[500px] mx-auto lg:mx-0 lg:max-w-md">
 						Pizza ipsum dolor amet thin crust large black olives &
 						tomato fresh tomatoes Pizza ipsum dolor amet thin crust
 						large black fresh tomatoes Pizza ipsum dolor amet thin
 						crust large black.
 					</p>
-					<CTAButton className="bg-brand-green text-white w-fit">
+					<CTAButton className="text-white bg-brand-green w-fit sm:mx-auto lg:mx-0">
 						Get started
 					</CTAButton>
 				</div>
-				<div>
+				<div className="lg:flex-1 lg:flex lg:justify-end">
 					<StatusCards />
 				</div>
 			</div>

@@ -28,15 +28,25 @@
 	}
 
 	h1 {
-		@apply text-4xl sm:text-[2.5rem] sm:leading-tight min-[768px]:text-5xl min-[768px]:leading-snug md:text-[2.5rem] tracking-wide lg:text-[3.25rem] lg:leading-tight;
+		@apply text-4xl sm:text-[2.5rem] sm:leading-tight md:!text-[2.5rem] tracking-wide lg:!text-[3.25rem] lg:leading-tight;
 	}
 
 	h2 {
-		@apply text-3xl min-[768px]:text-4xl lg:text-[2.5rem];
+		@apply text-3xl lg:!text-[2.5rem];
 	}
 
 	h4 {
 		@apply text-2xl font-semibold;
+	}
+
+	@media screen and (min-width: 768px) {
+		h1 {
+			@apply text-5xl leading-snug;
+		}
+
+		h2 {
+			@apply text-4xl;
+		}
 	}
 }
 
@@ -46,11 +56,11 @@
 	}
 
 	.section {
-		@apply gap-12 px-5 py-8 c-container min-[768px]:py-16 lg:py-20;
+		@apply gap-12 px-5 py-8 c-container lg:!py-24;
 	}
 
 	.btn {
-		@apply rounded-[4px] font-semibold font-inter min-[768px]:px-6 min-[768px]:py-3 max-[768px]:py-[10px] max-[768px]:px-[18px];
+		@apply rounded-[4px] font-semibold font-inter;
 	}
 
 	.mobile-nav .nav-link {
@@ -66,12 +76,44 @@
 	}
 
 	.carousel-buttons button {
-		@apply flex items-center justify-center p-3 rounded-lg text-green bg-light-green sm:p-4 hover:bg-darkened-light-green transition-all duration-300 ease-in-out;
+		@apply flex items-center justify-center p-3 transition-all duration-300 ease-in-out rounded-lg text-green bg-light-green sm:p-4 hover:bg-darkened-light-green;
+	}
+
+	.status-cards-wrapper {
+		@apply flex flex-col gap-4 max-w-[400px] mx-auto lg:mx-0 lg:min-w-[648px];
+	}
+
+	.status-cards-container {
+		@apply flex flex-col flex-1 gap-4;
+	}
+
+	@media screen and (min-width: 646px) {
+		.status-cards-wrapper {
+			@apply max-w-[648px] flex-row;
+		}
+
+		.status-cards-container:first-child {
+			@apply -mt-6;
+		}
 	}
 
 	@media screen and (min-width: 768px) {
 		.c-container {
 			@apply !px-[50px];
+		}
+
+		.section {
+			@apply py-16;
+		}
+
+		.btn {
+			@apply px-6 py-3;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.btn {
+			@apply py-[10px] px-[18px];
 		}
 	}
 }

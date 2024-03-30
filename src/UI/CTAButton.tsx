@@ -5,7 +5,7 @@ const CTAButton = ({ children, className }: ButtonProps) => {
 	return (
 		<a
 			href="#"
-			className={`flex items-center gap-2 btn rounded-[4px] group transition-all duration-300 ease-in-out ${className}`}
+			className={`flex items-center gap-2 btn rounded-[4px] group transition-smooth ${className}`}
 		>
 			<span>{children}</span>
 			<span className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-1">

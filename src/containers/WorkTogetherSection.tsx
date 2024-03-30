@@ -13,7 +13,7 @@ const WorkTogetherSection = () => {
 						large black fresh tomatoes Pizza ipsum dolor amet thin
 						crust large black.
 					</p>
-					<CTAButton className="text-white bg-brand-green w-fit sm:mx-auto lg:mx-0">
+					<CTAButton className="text-white bg-brand-green w-fit sm:mx-auto lg:mx-0 hover:bg-darkened-brand-green">
 						Get started
 					</CTAButton>
 				</div>

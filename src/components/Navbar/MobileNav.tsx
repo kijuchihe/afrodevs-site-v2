@@ -7,7 +7,7 @@ const MobileNav = ({ showMenu, onToggleMenu }: MobileNavProps) => {
 	const { menuLinks } = data;
 	return (
 		<ul
-			className={`overflow-hidden md:hidden mobile-nav font-lexend transition-all duration-300 ease-in-out min-[768px]:px-[50px] ${
+			className={`overflow-hidden md:hidden mobile-nav font-lexend transition-smooth min-[768px]:px-[50px] ${
 				showMenu ? "h-[232px] pt-4" : "h-0"
 			}`}
 		>

@@ -14,7 +14,7 @@ const Footer = () => {
 					<p className="text-grey sm:max-w-[500px] mx-auto lg:mx-0 lg:max-w-md mt-4 mb-6">
 						Leverage Afrodev’s community of vetted engineers.
 					</p>
-					<Button className="block text-white bg-green w-fit sm:mx-auto lg:mx-0">
+					<Button className="block text-white transition-smooth bg-green w-fit sm:mx-auto lg:mx-0 hover:bg-darkened-green">
 						Let's talk
 					</Button>
 				</div>

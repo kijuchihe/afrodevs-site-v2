@@ -5,7 +5,7 @@ const Services = () => {
 	const { services } = data;
 	return (
 		<section className="bg-light-green pt-[30px]">
-			<div className="flex flex-col items-center section">
+			<div className="flex flex-col items-center gap-12 section">
 				<div className="space-y-6 text-brand-green sm:text-center">
 					<h2>
 						Diverse services <br className="hidden sm:block" /> to

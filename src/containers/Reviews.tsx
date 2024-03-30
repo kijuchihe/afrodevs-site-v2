@@ -12,7 +12,7 @@ const Reviews = () => {
 
 	return (
 		<section className="bg-white pt-[30px]">
-			<div className="section flex flex-col md:flex-row md:justify-between md:gap-0 md:items-center">
+			<div className="flex flex-col gap-12 section md:flex-row md:justify-between md:gap-0 md:items-center">
 				<div className="md:space-y-6">
 					<h2 className="text-brand-green sm:text-center md:text-left">
 						What our clients say

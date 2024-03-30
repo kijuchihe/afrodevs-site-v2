@@ -5,7 +5,7 @@ import { MdOutlineLocalPhone } from "react-icons/md";
 
 const FooterLinks = () => {
 	return (
-		<div className="flex flex-col gap-8">
+		<div className="footer-links">
 			<FooterLinkBlock title="Company">
 				<li>
 					<a href="#">Blog</a>
@@ -29,17 +29,25 @@ const FooterLinks = () => {
 				</li>
 			</FooterLinkBlock>
 			<FooterLinkBlock title="Contact us">
-				<li className="flex items-center gap-2">
-					<LuMail />
-					<a href="#">work@afro.dev</a>
+				<li className="flex items-center gap-2 sm:gap-3">
+					<span>
+						<LuMail />
+					</span>
+					<a href="mailto:build@afrodevs.com">build@afrodevs.com</a>
 				</li>
-				<li className="flex items-center gap-2">
-					<MdOutlineLocalPhone />
-					<a href="#">+234(080)5788xxx</a>
+				<li className="flex items-center gap-2 sm:gap-3">
+					<span>
+						<MdOutlineLocalPhone />
+					</span>
+					<a href="tel:+16515600093">+1 (651) 560-0093</a>
 				</li>
-				<li className="flex items-center gap-2">
-					<FaXTwitter />
-					<a href="#">afrodev.community</a>
+				<li className="flex items-center gap-2 sm:gap-3">
+					<span>
+						<FaXTwitter />
+					</span>
+					<a href="https://twitter.com/afrodevs" target="_blank">
+						@afrodevs
+					</a>
 				</li>
 			</FooterLinkBlock>
 		</div>

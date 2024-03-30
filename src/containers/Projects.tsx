@@ -5,7 +5,7 @@ const Projects = () => {
 	const { projects } = data;
 	return (
 		<section className="bg-white pt-[30px]">
-			<div className="flex flex-col items-center section">
+			<div className="flex flex-col items-center gap-12 section">
 				<div className="space-y-6 sm:text-center">
 					<h2 className="text-brand-green">Our featured projects</h2>
 					<p className="text-grey sm:max-w-[500px]">

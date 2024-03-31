@@ -16,7 +16,7 @@ const StatusCard = ({
 			</div>
 			<div className={`${textColor} gap-[3px]`}>
 				<h4>{amount}+</h4>
-				<div className="uppercase font-medium">{title}</div>
+				<div className="font-medium uppercase">{title}</div>
 			</div>
 		</div>
 	);

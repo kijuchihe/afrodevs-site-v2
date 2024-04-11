@@ -5,7 +5,7 @@ import Button from "../UI/Button";
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<section className="bg-white py-[30px]">
+		<section className="bg-white pt-[30px]">
 			<div className="flex flex-col gap-32 section lg:flex-row lg:justify-between lg:gap-0">
 				<div className="sm:text-center lg:text-left lg:flex-1">
 					<h2 className="text-brand-green">

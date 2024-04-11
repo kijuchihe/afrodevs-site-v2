@@ -2,7 +2,7 @@
 import { LuPenTool } from "react-icons/lu";
 import { LuCode2 } from "react-icons/lu";
 import { LuLaptop } from "react-icons/lu";
-import { LuDatabase } from "react-icons/lu";
+import { LuBarChart4 } from "react-icons/lu";
 
 // images
 import project1 from "./assets/images/project-1.png";
@@ -18,7 +18,7 @@ const data = {
 			Icon: LuPenTool,
 			title: "UI/UX Design",
 			description:
-				"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam nec tortor massa.	Praesent cursus porttitor egestas.",
+				"Elevate your digital experience with our exceptional UI/UX design service. We specialize in creating intuitive, stunning user interfaces for seamless user experiences. Focusing on user-centric principles, we ensure accessibility and enjoyment, transforming your ideas into reality.",
 			link: "#",
 		},
 		{
@@ -26,7 +26,7 @@ const data = {
 			Icon: LuCode2,
 			title: "Mobile App Development",
 			description:
-				"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam nec tortor massa.	Praesent cursus porttitor egestas. ",
+				"Bring your ideas to life anywhere with our mobile app development service. We cover everything from concept to launch for iOS and Android, focusing on performance, scalability, and security. Our team builds outstanding custom mobile applications.",
 			link: "#",
 		},
 		{
@@ -34,15 +34,15 @@ const data = {
 			Icon: LuLaptop,
 			title: "Frontend Development",
 			description:
-				"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam nec tortor massa.	Praesent cursus porttitor egestas.",
+				"Craft your digital presence with our frontend development services. We create fast, responsive, visually compelling websites that work flawlessly across all devices. Our sites are dynamic experiences that captivate and convert, not just digital spaces.",
 			link: "#",
 		},
 		{
 			id: 4,
-			Icon: LuDatabase,
-			title: "Data Science",
+			Icon: LuBarChart4,
+			title: "SEO/Marketing",
 			description:
-				"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam nec tortor massa.	Praesent cursus porttitor egestas.",
+				"Visibility, Engagement, Growth: Our SEO and marketing services enhance your online visibility and traffic. With keyword research, optimization, content marketing, and social media strategies, we elevate your brand and accelerate business growth.",
 			link: "#",
 		},
 	],

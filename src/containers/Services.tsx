@@ -2,6 +2,7 @@ import ServiceCard from "../components/Services/ServiceCard";
 import data from "../data";
 import pattern from "../assets/svgs/pattern.svg";
 import blob from "../assets/svgs/blob.svg";
+import FadeUpInView from "../animation components/FadeUpInView";
 
 const Services = () => {
 	const { services } = data;
@@ -9,10 +10,12 @@ const Services = () => {
 		<section className="bg-light-green pt-[30px] overflow-hidden">
 			<div className="relative flex flex-col items-center gap-12 section">
 				<div className="relative z-10 space-y-6 text-brand-green sm:text-center">
-					<h2>
-						Diverse services <br className="hidden sm:block" /> to
-						help your business
-					</h2>
+					<FadeUpInView>
+						<h2>
+							Diverse services <br className="hidden sm:block" />{" "}
+							to help your business
+						</h2>
+					</FadeUpInView>
 					<p className="sm:max-w-[500px]">
 						Pizza ipsum dolor amet thin crust large black olives &
 						tomato fresh tomatoes Pizza ipsum dolor amet thin crust

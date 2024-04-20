@@ -79,3 +79,9 @@ export interface CarouselProps {
 	prev: () => void;
 	next: () => void;
 }
+
+export interface FadeAnimProps {
+	children: ReactNode;
+	delay?: number;
+	className?: string;
+}

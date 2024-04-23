@@ -15,6 +15,7 @@ const StatusCards = () => {
 					title="Satisfied Clients"
 					bgColor="bg-light-brown"
 					textColor="text-brown"
+					key={1}
 				/>
 				<StatusCard
 					icon={icon2}
@@ -22,6 +23,7 @@ const StatusCards = () => {
 					title="Years of experience"
 					bgColor="bg-light-lime"
 					textColor="text-lime"
+					key={2}
 				/>
 			</div>
 			<div className="status-cards-container">
@@ -31,6 +33,7 @@ const StatusCards = () => {
 					title="Awards earned"
 					bgColor="bg-light-blue"
 					textColor="text-blue"
+					key={3}
 				/>
 				<StatusCard
 					icon={icon4}
@@ -38,6 +41,7 @@ const StatusCards = () => {
 					title="Projects Completed"
 					bgColor="bg-light-pink"
 					textColor="text-pink"
+					key={4}
 				/>
 			</div>
 		</div>

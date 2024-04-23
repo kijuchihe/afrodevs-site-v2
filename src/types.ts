@@ -23,11 +23,15 @@ export interface CardButtonProps extends ButtonProps {
 	link: string;
 }
 
-export interface CardProps {
+export interface CardProps extends AnimationStaggerProps {
 	id: number;
 	title: string;
 	description: string;
 	link: string;
+}
+
+export interface AnimationStaggerProps {
+	delay: number;
 }
 export interface ServiceCardProps extends CardProps {
 	Icon: IconType;

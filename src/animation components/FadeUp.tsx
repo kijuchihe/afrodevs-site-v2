@@ -4,10 +4,10 @@ import { FadeAnimProps } from "../types";
 const FadeUp = ({ children, delay }: FadeAnimProps) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0.01, transform: "translateY(50px)" }}
+			initial={{ opacity: 0.01, translateY: 50 }}
 			animate={{
 				opacity: 1,
-				transform: "translateY(0px)",
+				translateY: 0,
 			}}
 			transition={{
 				duration: 1,

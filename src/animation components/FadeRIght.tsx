@@ -4,10 +4,10 @@ import { FadeAnimProps } from "../types";
 const FadeRight = ({ children, delay, className }: FadeAnimProps) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0.01, transform: "translateX(50px)" }}
+			initial={{ opacity: 0.01, translateX: 50 }}
 			animate={{
 				opacity: 1,
-				transform: "translateX(0px)",
+				translateX: 0,
 			}}
 			transition={{
 				duration: 1,

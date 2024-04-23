@@ -16,15 +16,21 @@ const Services = () => {
 							to help your business
 						</h2>
 					</FadeUpInView>
-					<p className="sm:max-w-[500px]">
-						Pizza ipsum dolor amet thin crust large black olives &
-						tomato fresh tomatoes Pizza ipsum dolor amet thin crust
-						large black.
-					</p>
+					<FadeUpInView>
+						<p className="sm:max-w-[500px]">
+							Pizza ipsum dolor amet thin crust large black olives
+							& tomato fresh tomatoes Pizza ipsum dolor amet thin
+							crust large black.
+						</p>
+					</FadeUpInView>
 				</div>
 				<div className="relative z-10 grid justify-center gap-4 md:grid-cols-2">
-					{services.map((service) => (
-						<ServiceCard {...service} key={service.id} />
+					{services.map((service, i) => (
+						<ServiceCard
+							{...service}
+							key={service.id}
+							delay={i * 0.2}
+						/>
 					))}
 				</div>
 				<div className="absolute hidden md:block -right-10 top-16">

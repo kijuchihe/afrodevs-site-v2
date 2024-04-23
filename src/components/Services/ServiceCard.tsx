@@ -1,9 +1,10 @@
 import CardButton from "../../UI/CardButton";
+import FadeUpInView from "../../animation components/FadeUpInView";
 import { ServiceCardProps } from "../../types";
 
-const ServiceCard = ({ Icon, title, description, link }: ServiceCardProps) => {
+const ServiceCard = ({ Icon, title, description, link, delay }: ServiceCardProps) => {
 	return (
-		<div className="flex flex-col bg-white rounded-[20px] p-6 gap-8 border-[#E6E8EC]/50 border sm:max-w-xl sm:flex-row md:gap-4 lg:gap-8 lg:p-10">
+		<FadeUpInView delay={delay} className="flex flex-col bg-white rounded-[20px] p-6 gap-8 border-[#E6E8EC]/50 border sm:max-w-xl sm:flex-row md:gap-4 lg:gap-8 lg:p-10">
 			<div>
 				<div className="text-green bg-light-green rounded-[10px] w-fit p-4 lg:p-5">
 					<Icon size={30} />
@@ -20,7 +21,7 @@ const ServiceCard = ({ Icon, title, description, link }: ServiceCardProps) => {
 					Learn More
 				</CardButton>
 			</div>
-		</div>
+		</FadeUpInView>
 	);
 };
 

@@ -1,9 +1,19 @@
+import FadeUpInView from "../../animation components/FadeUpInView";
 import { ProjectCardProps } from "../../types";
 import CardButton from "../../UI/CardButton";
 
-const ProjectCard = ({ image, title, description, link }: ProjectCardProps) => {
+const ProjectCard = ({
+	image,
+	title,
+	description,
+	link,
+	delay,
+}: ProjectCardProps) => {
 	return (
-		<figure className="border rounded-lg border-light-grey sm:max-w-lg">
+		<FadeUpInView
+			delay={delay}
+			className="border rounded-lg border-light-grey sm:max-w-lg"
+		>
 			<div>
 				<img
 					src={image}
@@ -22,7 +32,7 @@ const ProjectCard = ({ image, title, description, link }: ProjectCardProps) => {
 					Read full case study
 				</CardButton>
 			</figcaption>
-		</figure>
+		</FadeUpInView>
 	);
 };
 

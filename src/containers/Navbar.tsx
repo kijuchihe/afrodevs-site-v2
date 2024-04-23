@@ -4,6 +4,7 @@ import MobileNav from "../components/Navbar/MobileNav";
 import DesktopNav from "../components/Navbar/DesktopNav";
 import Logo from "../components/Logo";
 import useNavbarScroll from "../hooks/use-navbarScroll";
+import { easeIn, motion } from "framer-motion";
 
 const Navbar = () => {
 	const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -13,7 +14,15 @@ const Navbar = () => {
 	};
 
 	return (
-		<header
+		<motion.header
+			initial={{ translateY: -110 }}
+			animate={{
+				translateY: 0,
+			}}
+			transition={{
+				duration: 1,
+				ease: easeIn,
+			}}
 			className={`top-0 left-0 right-0 z-50 bg-white fixed ${
 				scroll ? "shadow-[0_10px_30px_-10px] shadow-black/10" : ""
 			}`}
@@ -35,7 +44,7 @@ const Navbar = () => {
 			</div>
 			<hr className="h-[1px] bg-black/5 border-none md:hidden" />
 			<MobileNav showMenu={showMenu} onToggleMenu={toggleMenu} />
-		</header>
+		</motion.header>
 	);
 };
 

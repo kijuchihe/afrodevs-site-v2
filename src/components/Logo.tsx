@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/svgs/logo.svg";
 
 const Logo = ({ width }: { width?: string }) => {
 	return (
-		<a href="/" className={`block ${width || "w-40"}`}>
+		<Link to="/" className={`block ${width || "w-40"}`}>
 			<img src={logo} alt="Afrodevs" className="w-full" />
-		</a>
+		</Link>
 	);
 };
 

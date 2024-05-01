@@ -34,8 +34,7 @@ const HireForm = ({
       }),
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+      .then(() => {
         toast("Thank you for joining us!", { type: "success" });
         setFormData({
           name: "",
@@ -45,8 +44,7 @@ const HireForm = ({
         });
         setShowFormPopup(false);
       })
-      .catch((error) => {
-        console.log(error);
+      .catch(() => {
         setFormData({
           name: "",
           email: "",

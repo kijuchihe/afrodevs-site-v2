@@ -14,7 +14,7 @@ export interface HamburgerMenuProps {
 	onToggleMenu: () => void;
 }
 
-export interface ButtonProps {
+export interface ButtonProps extends React.HTMLAttributes<HTMLAnchorElement>{
 	children?: ReactNode;
 	className: string;
 }

@@ -25,7 +25,7 @@ const Hero = () => {
             </p>
           </FadeUp>
           <FadeUp delay={1.4}>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <CTAButton
                 className="text-white bg-green w-fit hover:bg-darkened-green"
                 onClick={() => setShowFormPopup(true)}
@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
         <FadeUp
           delay={1}
-          className="flex justify-center mx-auto w-full max-w-xl md:-mt-6 lg:w-1/2 lg:justify-end md:mx-0 md:max-w-none md:w-auto"
+          className="flex justify-center w-full max-w-xl mx-auto md:-mt-6 lg:w-1/2 lg:justify-end md:mx-0 md:max-w-none md:w-auto"
         >
           <img
             src={heroImg}

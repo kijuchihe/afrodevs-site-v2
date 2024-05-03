@@ -11,7 +11,7 @@ import project3 from "./assets/images/project-3.png";
 import avatar from "./assets/images/avatar.png";
 
 const data = {
-	menuLinks: ["About us", "Projects", "Community"],
+	menuLinks: ["About us", "Community"],
 	services: [
 		{
 			id: 1,

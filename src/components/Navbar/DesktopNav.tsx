@@ -1,8 +1,10 @@
+import { useForm } from "../../context/FormContext";
 import data from "../../data";
 import CTAButton from "../../UI/CTAButton";
 import Navlink from "./Navlink";
 
 const DesktopNav = () => {
+	const { setShowFormPopup } = useForm();
 	const { menuLinks } = data;
 	return (
 		<ul className="items-center flex-1 hidden md:flex font-lexend desktop-nav">
@@ -12,7 +14,10 @@ const DesktopNav = () => {
 				))}
 			</li>
 			<li className="cta">
-				<CTAButton className="justify-center text-white bg-green hover:bg-darkened-green">
+				<CTAButton
+					onClick={() => setShowFormPopup(true)}
+					className="justify-center text-white bg-green hover:bg-darkened-green"
+				>
 					Hire Us
 				</CTAButton>
 			</li>

@@ -1,8 +1,11 @@
 import CTAButton from "../UI/CTAButton";
 import FadeUpInView from "../animation components/FadeUpInView";
 import StatusCards from "../components/WorkTogetherSection/StatusCards";
+import { useForm } from "../context/FormContext";
 
 const WorkTogetherSection = () => {
+	const { setShowFormPopup } = useForm();
+	
 	return (
 		<section className="bg-white pt-[30px]">
 			<div className="flex flex-col gap-12 section lg:flex-row lg:gap-10 lg:justify-between min-[646px]:gap-24">
@@ -21,7 +24,7 @@ const WorkTogetherSection = () => {
 						</p>
 					</FadeUpInView>
 					<FadeUpInView>
-						<CTAButton className="text-white bg-brand-green w-fit sm:mx-auto lg:mx-0 hover:bg-darkened-brand-green">
+						<CTAButton onClick={() => setShowFormPopup(true)} className="text-white bg-brand-green w-fit sm:mx-auto lg:mx-0 hover:bg-darkened-brand-green">
 							Get started
 						</CTAButton>
 					</FadeUpInView>

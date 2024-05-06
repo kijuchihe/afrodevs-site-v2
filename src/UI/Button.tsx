@@ -1,13 +1,13 @@
 import { ButtonProps } from "../types";
 
-const Button = ({ children, className }: ButtonProps) => {
+const Button = ({ children, className, ...props }: ButtonProps) => {
 	return (
-		<a
-			href="#"
+		<button
 			className={`btn rounded-[4px] transition-smooth ${className}`}
+			{...props}
 		>
 			<span>{children}</span>
-		</a>
+		</button>
 	);
 };
 

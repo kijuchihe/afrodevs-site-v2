@@ -14,7 +14,7 @@ export interface HamburgerMenuProps {
 	onToggleMenu: () => void;
 }
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLAnchorElement>{
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 	children?: ReactNode;
 	className: string;
 }
@@ -88,4 +88,13 @@ export interface FadeAnimProps {
 	children: ReactNode;
 	delay?: number;
 	className?: string;
+}
+export interface InputProps {
+	label: string;
+	type: string;
+	name: string;
+	value: string;
+	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	required?: boolean;
+	placeholder?: string;
 }

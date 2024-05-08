@@ -1,9 +1,12 @@
 import FadeUpInView from "../animation components/FadeUpInView";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Logo from "../components/Logo";
+import { useForm } from "../context/FormContext";
 import Button from "../UI/Button";
 
 const Footer = () => {
+	const { setShowFormPopup } = useForm();
+
 	const year = new Date().getFullYear();
 	return (
 		<section className="bg-white pt-[30px]">
@@ -20,7 +23,10 @@ const Footer = () => {
 						</p>
 					</FadeUpInView>
 					<FadeUpInView>
-						<Button className="block text-white transition-smooth bg-green w-fit sm:mx-auto lg:mx-0 hover:bg-darkened-green">
+						<Button
+							onClick={() => setShowFormPopup(true)}
+							className="block text-white transition-smooth bg-green w-fit sm:mx-auto lg:mx-0 hover:bg-darkened-green"
+						>
 							Let's talk
 						</Button>
 					</FadeUpInView>

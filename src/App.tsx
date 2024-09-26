@@ -1,24 +1,28 @@
-import Hero from "./containers/Hero";
-import Navbar from "./containers/Navbar";
-// import Projects from "./containers/Projects";
+import Hero from "./components/pages/home/Hero";
+// import Navbar from "./components/pages/home/Navbar";
+// import Projects from "./Projects";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import HireForm from "./components/Hero/HireForm";
-import Footer from "./containers/Footer";
-import Testimonials from "./containers/Reviews";
-import Services from "./containers/Services";
-import WorkTogetherSection from "./containers/WorkTogetherSection";
+import HireForm from "./components/features/Hero/HireForm";
+// import Footer from "./components/pages/home/Footer";
+import Testimonials from "./components/pages/home/Reviews";
+import Services from "./components/pages/home/Services";
+import WorkTogetherSection from "./components/pages/home/WorkTogetherSection";
+import Layout from "./components/layout";
+
 
 const App = () => {
 	return (
 		<>
-			<Navbar />
-			<Hero />
-			<Services />
-			{/* <Projects /> */}
-			<Testimonials />
-			<WorkTogetherSection />
-			<Footer />
+
+			<Layout>
+				<Hero />
+				<Services />
+				{/* <Projects /> */}
+				<Testimonials />
+				<WorkTogetherSection />
+			</Layout>
+
 			<ToastContainer />
 			<HireForm />
 		</>

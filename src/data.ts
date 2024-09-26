@@ -5,10 +5,10 @@ import { LuLaptop } from "react-icons/lu";
 import { LuBarChart4 } from "react-icons/lu";
 
 // images
-import project1 from "./assets/images/project-1.png";
-import project2 from "./assets/images/project-2.png";
-import project3 from "./assets/images/project-3.png";
-import avatar from "./assets/images/avatar.png";
+import project1 from "/assets/images/project-1.png";
+import project2 from "/assets/images/project-2.png";
+import project3 from "/assets/images/project-3.png";
+import avatar from "/assets/images/avatar.png";
 
 const data = {
   menuLinks: ["About us", "Community"],

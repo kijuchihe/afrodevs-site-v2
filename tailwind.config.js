@@ -8,6 +8,7 @@ export default {
 			lg: "1200px",
 			xl: "14400px",
 		},
+
 		extend: {
 			colors: {
 				green: "#06A290",
